@@ -1,4 +1,4 @@
-FROM ruby:2.7.4-alpine as base
+FROM ruby:2.6.5-alpine3.11 as base
 
 RUN apk add \
     --no-cache \
@@ -35,16 +35,8 @@ ENV LANG="C.UTF-8" \
     LC_COLLATE="C" \
     GEM_HOME="/usr/local/bundle"
 
-# RUN bundle config build.nokogiri --use-system-librarie
+RUN bundle config build.nokogiri --use-system-librarie
 
-# COPY ./src/Gemfile Gemfile
-# COPY ./src/Gemfile.lock Gemfile.lock
-# RUN bundle config --local frozen 1 && \
-#     bundle config --local build.sassc --disable-march-tune-native && \
-#     bundle install -j4 --retry 3
-
-
-# Setup folder root
 WORKDIR "/app"
 
 EXPOSE 8000
@@ -55,7 +47,7 @@ ENTRYPOINT ["tini", "--", "/sbin/docker-entrypoint.sh"]
 
 FROM base as develop
 
-COPY skel /etc/skel
+COPY ./skel /etc/skel
 
 RUN set -eux \
     && mkdir /home/app \
