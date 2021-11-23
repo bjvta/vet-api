@@ -113,3 +113,56 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 77ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 3041)
 
 
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:50:42 +0000
+Processing by HomeController#index as HTML
+Completed 204 No Content in 39ms (ActiveRecord: 0.0ms | Allocations: 2203)
+
+
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:51:36 +0000
+Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 141)
+
+
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:51:44 +0000
+Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 89)
+
+
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:51:46 +0000
+Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:52:14 +0000
+Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 94)
+
+
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:52:17 +0000
+Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 75)
+
+
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:52:31 +0000
+  
+SyntaxError (/app/vet/app/controllers/home_controller.rb:3: syntax error, unexpected '}', expecting =>
+... json: {"Hello World from API"}
+...                              ^):
+  
+app/controllers/home_controller.rb:3: syntax error, unexpected '}', expecting =>
+app/controllers/home_controller.rb:3: syntax error, unexpected '}', expecting =>
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:53:01 +0000
+Processing by HomeController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 170)
+
+
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:53:04 +0000
+Processing by HomeController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 100)
+
+
+Started GET "/" for 172.21.0.1 at 2021-11-23 18:54:28 +0000
+Processing by HomeController#index as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 100)
+
+
