@@ -1,4 +1,49 @@
 # vet-api
 
-This is the API for the veterinarian app.
-This uses docker, rails 
+## Requirements
+
+- [Docker v19+](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- [docker-compose v1.23+](https://docs.docker.com/compose/install/)
+- [docker-compose via pip](https://pypi.org/project/docker-compose/)
+- make
+
+## Set up development environment
+
+if you want to describe the images docker of gitlab
+
+    shell
+        docker login
+        docker pull bjason01/vet-api:latest
+        docker pull bjason01/vet-api:develop
+
+### We run the development environment
+In the root directory of the project.
+Create a .env file, there you can custom environment variables if you need it.
+
+     shell
+        touch .env
+        chmod 600 .env
+
+create the .env file
+
+        BASE_URL=localhost:8000
+        POSTGRES_HOST=database
+        POSTGRES_USER=postgres
+        POSTGRES_PASSWORD=postgres
+        POSTGRES_DATABASE=vet_master
+
+Type in the bash
+
+        make backend
+
+Inside the container 
+        
+        make
+
+
+Now we can run the project, inside the container please
+
+        make runserver
+
+
+Then you can go to http://0.0.0.0:8000
